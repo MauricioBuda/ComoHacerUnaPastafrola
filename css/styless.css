@@ -475,7 +475,7 @@ footer div p {
   margin-top: 10rem;
   grid-template-areas: 
   "neo_com1 neo_com2"
-  "neo_com_volver neo_com_volver";
+  "neo_com3 neo_com_volver";
  }
 
  @media screen and (max-width: 728px) {
@@ -486,12 +486,16 @@ footer div p {
 }
 
 .neo_com1{
-  grid-area: .neo_com1;
+  grid-area: neo_com1;
 }
 
-..neo_com2{
-  grid-area: .neo_com2;
+.neo_com2{
+  grid-area: neo_com2;
 }
+
+.neo_com3{
+  grid-area: neo_com3;
+} 
 
 .neo_com_volver{
   grid-area: neo_com_volver;
@@ -521,11 +525,11 @@ footer div p {
 }
 
 .neo_placa1{
-  grid-area: .neo_placa1;
+  grid-area: neo_placa1;
 }
 
-..neo_placa2{
-  grid-area: .neo_placa2;
+.neo_placa2{
+  grid-area: neo_placa2;
 }
 
 .neo_placa_volver{
@@ -538,36 +542,54 @@ footer div p {
 
 /* EMPIEZA 585 */
 .section_dsc{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  max-width: 100%;
-  max-height: 100%;
-  margin: 1rem; 
-}
-
-.section_dsc p{
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 230px 230px ;
+  justify-items: center;
   align-items: center;
   font-size: 2vw;
-  margin: 1rem;
+  grid-template-areas: 
+  "dsc1 dsc2"
+  "dsc3 dsc_volver";
+ }
+
+ @media screen and (max-width: 728px) {
+  .section_dsc{
+    grid-template-rows: 165px 165px  ;
+    row-gap: 1rem;
+  }
+}
+
+.dsc1{
+  grid-area: dsc1;
+}
+
+.dsc2{
+  grid-area: dsc2;
+}
+
+.dsc3{
+  grid-area: dsc3;
+}
+
+.dsc_volver{
+  grid-area: dsc_volver;
+  border: solid 4px black;
+}
+
+.p_585{
+  font-size: 2rem;
   text-align: left;
 }
 
-.section_dsc button{
-  margin: 3rem;
+.dsc__volver{
+  margin: 1rem;
+  border: solid 4px black;
 }
 
-@media screen and (max-width: 728px) {
-  .section_dsc p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 5vw;
-    margin: 2rem;
-  }
+.div_volver_585{
+  display: flex;
+  justify-content: center;
 }
 /* TERMINA 585 */
 

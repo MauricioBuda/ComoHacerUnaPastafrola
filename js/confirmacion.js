@@ -9,7 +9,7 @@ let nombreLS = localStorage.getItem('nombre')
 function CartelitoToastBienvenido (nombre) {
     Toastify({
         text: "Bienvenido " + nombre,
-        duration: 2000,
+        duration: 1500,
         gravity: "top",
         position: "left",
         style:{
